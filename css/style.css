@@ -1,0 +1,247 @@
+@font-face {
+    font-family: 'opinion';
+    src: url('../fonts/Mint Type - Opinion Pro Light.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bebas';
+    src: url("../fonts/BebasNeue Bold.otf") format("opentype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bebas';
+    src: url("../fonts/BebasNeue Book.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bebas';
+    src: url("../fonts/BebasNeue Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bebas';
+    src: url("../fonts/BebasNeue Regular.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bebas';
+    src: url("../fonts/BebasNeue Thin.otf") format("opentype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url("../fonts/BebasNeue Book.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'intro';
+    src: url('../fonts/Intro.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ArialNarrow';
+    src: url('../fonts/intro-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #5b6262;
+    margin: 0;
+}
+
+.layout {
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+.main .layout {
+    padding-top: 80px;
+    padding-bottom: 120px;
+    overflow: hidden;
+    background-image: url('../images/bg__main.png');
+    background-color: #f7f3ef;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    background-attachment: fixed;
+}
+
+.header .layout {
+    position: relative;
+    padding: 1px 0 0 0;
+}
+
+.header__img {
+    background-image: url('../images/bg__header.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 990px;
+    max-width: 990px;
+    width: 100%;
+    height: 470px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.footer__img {
+    background-image: url('../images/bg__footer.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 990px;
+    max-width: 990px;
+    width: 100%;
+    height: 272px;
+    position: absolute;
+    top: -245px;
+    left: 0;
+}
+
+
+.subtitle {
+    text-align: center;
+    margin-left: 120px;
+    margin-top: 120px;
+    font-family: 'bebas';
+    font-size: 48pt;
+    font-weight: 800;
+    font-style: normal;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    line-height: 1.2;
+}
+
+.title {
+    text-align: center;
+    margin: 0 80px 0 0;
+    font-family: 'bebas';
+    font-size: 72pt;
+    font-weight: 800;
+    font-style: normal;
+    color: #ff8a2e;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    line-height: 1.2;
+}
+
+
+.main__header {
+    font-family: 'intro';
+    font-size: 22pt;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main__text {
+    font-family: 'opinion';
+    font-size: 12pt;
+    margin: 0 20px;
+    text-align: justify;
+    -webkit-columns: 450px 2;
+    -moz-columns: 450px 2;
+    columns: 450px 2;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+}
+
+.main__text p:nth-child(1){
+    margin-top: 0;
+}
+
+.main___box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 0 0 80px;
+}
+
+.main__text-header {
+    font-family: 'bebas';
+    font-size: 18pt;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.main__text-subheader {
+    font-family: 'bebas';
+    font-size: 16pt;
+    font-weight: 600;
+}
+
+.main__image-big {
+    display: block;
+    max-width: 800px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.main__image-small {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.main__link {
+    color: #0062ff;
+    word-break: break-all;
+}
+
+
+.square {
+    margin: 10px 0;
+}
+
+.square::before {
+    content: "■";
+    position: relative;
+    top: -3px;
+}
+
+.footer {
+
+}
+
+.footer .layout {
+    position: relative;
+    padding: 1px 0 0 0;
+}
+
+.footer__box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.footer__date, .footer__site {
+    font-family: "intro";
+    font-size: 14pt;
+    color: rgba(238, 138, 58, 1);
+    margin: 0 40px;
+}
+
+.main__logo {
+    margin-left: 20px;
+}
