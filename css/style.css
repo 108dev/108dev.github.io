@@ -248,3 +248,7 @@ body {
 .main__logo {
     margin-left: 20px;
 }
+
+ol li {
+    margin: 0 0 10px;
+}
