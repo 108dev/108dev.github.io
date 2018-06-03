@@ -252,3 +252,8 @@ body {
 ol li {
     margin: 0 0 10px;
 }
+
+.main__help {
+    background: #ccc;
+    padding: 5px;
+}
